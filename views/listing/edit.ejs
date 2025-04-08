@@ -1,0 +1,39 @@
+<% layout('/layout/boilerplate') -%>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <br>
+            <h2>Edit Your Listing</h2>
+            <br>
+            <form  action="/listings/<%= listing._id %>?_method=PUT" class="needs-validation" method="post" novalidate>
+                <div>
+                    <label for="title" class="form-label">Enter Title : </label>
+                    <input type="text" value="<%= listing.title %>" name="title" id="title" class="form-control mb-3" required/>
+                </div>
+                <div>
+                    <label for="description" class="form-label">Enter Description : </label>
+                    <textarea class="form-control mb-3" id="description" name="description"  required >
+                    <%= listing.description %>
+                    </textarea>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="price" class="form-label">Enter Price : </label>
+                        <input type="number" name="price" id="price" value="<%= listing.price %>" class="form-control mb-3"  required/>
+                    </div>
+                    <div class="col-6">
+                        <label for="country" class="form-label">Enter Country : </label>
+                        <input type="text" name="country" id="country" value="<%= listing.country %>" class="form-control mb-3" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="location" class="form-label">Enter Location : </label>
+                    <textarea class="form-control mb-3" id="location" name="location"  required >
+                        <%= listing.location %>
+                    </textarea>
+                </div>
+                <button style="background-color: rgb(240, 43, 43); color: rgb(255, 255, 255);" class="btn addform">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    /* background-color: aqua; */
+}
+.containers {
+   flex: 1;
+}
+.navbar {
+    /* background-color: brown!important; */
+    height: 4.5rem;
+}
+.fa-solid{
+    color: rgb(230, 24, 24);
+    font-size: 1.5rem;
+}
+.footer {
+    background-color: rgb(180, 191, 191);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.8rem 0;
+    width: 100%;
+}
+.footer p {
+    margin-bottom: 0.8rem;
+}
+.app-info a {
+   text-decoration: none;
+   color: black;
+}
+.app-info a:hover {
+    text-decoration: underline;
+    color: black;
+}
+.social-link i {
+    font-size: 1.4rem;
+}
+.listing-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+    position: relative;
+}
+.card {
+    margin: 0 1rem 1rem 0;
+    border: none;
+    padding: 0;
+}
+.img-container img {
+    height: 20rem;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    object-fit: cover;
+}
+/* img {
+    height: 20rem;
+    width: 100%;
+    background-image: cover;
+}
+.card {
+    height: 24rem; 
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+} */
+.listing-container a {
+    text-decoration: none;
+}
+.card-img-overlay:hover {
+    background-color: rgba(240, 248, 255, 0.216);
+}
+ 
+.individual-img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
